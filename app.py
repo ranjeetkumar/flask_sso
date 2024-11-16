@@ -41,7 +41,7 @@ def login():
     redirect_uri = url_for('authorize', _external=True)
     return google.authorize_redirect(redirect_uri, nonce=nonce)  # Pass nonce in redirect
 
-@app.route('/authorize')
+@app.route('/oauth2callback')
 def authorize():
     """Handle the callback from Google."""
     # Retrieve the nonce stored in session
