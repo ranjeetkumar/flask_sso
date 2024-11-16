@@ -45,5 +45,10 @@ Below is a step-by-step overview of how the Google OAuth 2.0 flow works in this 
 8. **Display User Info**  
    - The app displays the logged-in user's information (e.g., email, name) on the webpage.
 
-
+**Set Up Google OAuth Credentials**
+- Create a project in the Google Cloud Console.
+- Enable the OAuth consent screen.
+- Configure an OAuth 2.0 Client ID:
+- Authorized redirect URI: http://localhost:5000/oauth2callback
+- Save your credentials (Client ID and Client Secret).
 
